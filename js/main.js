@@ -7,19 +7,19 @@ let cloud = document.querySelector("#cloud");
 let score = document.querySelector("#score");
 let gameOver = document.querySelector("#gameOver");
 
-//declaring variable for score
+//Declarando a variavel da pontuação
 let interval = null;
 let playerScore = 0;
 
 
-//function for score
+//função da pontuação
 let scoreCounter = () => {
     playerScore++;
     score.innerHTML = `Score <b>${playerScore}</b>`;
 }
 
 
-//start Game
+//Início do jogo
 window.addEventListener("keydown", (start) => {
     //    console.log(start);
     if (start.code == "Space") {
@@ -35,7 +35,7 @@ window.addEventListener("keydown", (start) => {
 });
 
 
-//jump Your Character
+//Pulo
 window.addEventListener("keydown", (e) => {
     //    console.log(e);
 
@@ -50,7 +50,7 @@ window.addEventListener("keydown", (e) => {
         }
 });
 
-//'Game Over' if 'Character' hit The 'Block' 
+//'Game Over' se 'Character' Acertar o 'Block' 
 let result = setInterval(() => {
     let playerBottom = parseInt(getComputedStyle(player).getPropertyValue("bottom"));
     //    console.log("playerBottom" + playerBottom);
