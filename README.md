@@ -9,7 +9,7 @@
     <img src="https://github.com/othneildrew/Best-README-Template/raw/master/images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">MARIO RUNNING (GAME) V 4.0</h3>
+  <h3 align="center">LINK RUNNING (GAME) V 4.0</h3>
 
   <p align="center">
     <br />
