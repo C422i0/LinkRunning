@@ -1,7 +1,3 @@
-/* 
-MARIO RUNNING (GAME) V4.0
-Coded By: https://github.com/fmachadoweb
-*/
 
 let container = document.querySelector("#container");
 let player = document.querySelector("#player");
@@ -62,7 +58,7 @@ let result = setInterval(() => {
     let blockLeft = parseInt(getComputedStyle(block).getPropertyValue("left"));
     //    console.log("BlockLeft" + blockLeft);
 
-    if (playerBottom <= 90 && blockLeft >= 20 && blockLeft <= 145) {
+    if (playerBottom <= 90 && blockLeft >= 17 && blockLeft <= 110) {
         //        console.log("Game Over");
 
         gameOver.style.display = "block";
