@@ -6,7 +6,7 @@ let road = document.querySelector("#road");
 let cloud = document.querySelector("#cloud");
 let score = document.querySelector("#score");
 let gameOver = document.querySelector("#gameOver");
-
+let musica = document.querySelector('.musica');
 //Declarando a variavel da pontuação
 let interval = null;
 let playerScore = 0;
@@ -47,10 +47,11 @@ window.addEventListener("keydown", (e) => {
             setTimeout(() => {
                 player.classList.remove("playerActive");
             }, 500);
+            musica.play=true
         }
 });
 
-//'Game Over' se 'Character' Acertar o 'Block' 
+//'Game Over' se 'Character' Acertar 'Block' 
 let result = setInterval(() => {
     let playerBottom = parseInt(getComputedStyle(player).getPropertyValue("bottom"));
     //    console.log("playerBottom" + playerBottom);
