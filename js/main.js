@@ -7,6 +7,7 @@ let cloud = document.querySelector("#cloud");
 let score = document.querySelector("#score");
 let gameOver = document.querySelector("#gameOver");
 
+
 //Declarando a variavel da pontuação
 let interval = null;
 let playerScore = 0;
@@ -32,6 +33,7 @@ window.addEventListener("keydown", (start) => {
         let playerScore = 0;
         interval = setInterval(scoreCounter, 20);
     }
+  
 });
 
 
@@ -48,8 +50,9 @@ window.addEventListener("keydown", (e) => {
                 player.classList.remove("playerActive");
             }, 500);
            }
-           
+       
         });
+        
 
 //'Game Over' se 'Character' Acertar 'Block' 
 let result = setInterval(() => {
